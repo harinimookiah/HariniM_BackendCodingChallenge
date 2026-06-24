@@ -58,4 +58,11 @@ public class PlayerController {
 
         return "Player Deleted Successfully";
     }
+    
+    @GetMapping("/team/{teamName}")
+    public List<Player> getPlayersByTeamName(
+            @PathVariable String teamName) {
+
+        return playerService.getPlayersByTeamName(teamName);
+    }
 }

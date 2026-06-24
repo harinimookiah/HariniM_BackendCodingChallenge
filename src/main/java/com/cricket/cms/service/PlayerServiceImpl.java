@@ -79,4 +79,19 @@ public class PlayerServiceImpl implements PlayerService {
 
         playerRepository.delete(player);
     }
+    
+   
+    @Override
+    public List<Player> getPlayersByTeamName(String teamName) {
+
+        List<Player> players =
+                playerRepository.findByTeamName(teamName);
+
+        if(players.isEmpty()) {
+            throw new ResourceNotFoundException(
+                    "No players found for team : " + teamName);
+        }
+
+        return players;
+    }
 }
