@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: lavender;
+    text-align: center;
+}
+
+.App{
+    width:85%;
+    margin:30px auto;
+    text-align:center;
+}
+
+nav{
+    background-color: rebeccapurple;
+    padding:18px;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+h1{
+    color:rebeccapurple;
+}
+
+h2{
+    color:indigo;
+}
+
+.form-container{
+    width:500px;
+    margin:auto;
+    background-color:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+label{
+    display:block;
+    text-align:left;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:indigo;
+}
+
+input,
+select,
+textarea{
+    width:95%;
+    padding:10px;
+    border:1px solid mediumpurple;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+    height:80px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    background-color:blueviolet;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:rebeccapurple;
+}
+
+.error{
+    color:red;
+    text-align:left;
+    font-size:14px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background-color:white;
+}
+
+th{
+    background-color:rebeccapurple;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+    border:1px solid lightgray;
+    background-color: white;
+}
+
+tr:hover{
+    background-color:thistle;
+}
+
+hr{
+    margin:40px 0;
+}
+
+@media(max-width:768px){
+
+    .App{
+        width:95%;
+    }
+
+    .form-container{
+        width:90%;
+    }
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    input,
+    select,
+    textarea{
+        width:93%;
+    }
+}

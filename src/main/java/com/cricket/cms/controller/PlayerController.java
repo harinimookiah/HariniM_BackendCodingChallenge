@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.cricket.cms.dto.PlayerDTO;
 import com.cricket.cms.entity.Player;
@@ -14,6 +15,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/players")
+@CrossOrigin(origins = "http://localhost:3000")
 @Validated
 public class PlayerController {
 
